@@ -20,6 +20,10 @@ import {MatSliderModule} from "@angular/material/slider";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { FooterComponent } from './footer/footer.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatCardModule} from "@angular/material/card";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -27,26 +31,30 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     HeaderComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatToolbarModule,
-    HttpClientModule,
-    MatAutocompleteModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSidenavModule
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatToolbarModule,
+        HttpClientModule,
+        MatAutocompleteModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatSidenavModule,
+        ReactiveFormsModule,
+        MatCardModule,
+        MatPaginatorModule,
+        MatMenuModule
 
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

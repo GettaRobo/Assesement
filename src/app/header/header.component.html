@@ -1,10 +1,21 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="prime" color="primary">
   <mat-toolbar-row>
-    <span>Assesement of George Proto</span>
+<!--    <img style="padding-top:200px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3rN1B2SAOcNeYYiuph1MQdXmc9xY_fTeXWvAhCAwczBT3q3DajPYY_V5yMBaiybmB6o&amp;usqp=CAU">-->
+    <span>George Proto</span>
     <span class="example-spacer"></span>
-    <span>GP</span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+    <span>Hello, George</span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>expand_more</mat-icon>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
